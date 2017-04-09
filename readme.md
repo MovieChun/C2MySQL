@@ -5,7 +5,7 @@
 		$sudo service mysql start
 		#if you can't start it,place check you ip in /etc/mysql/my.cnf .
 		$mysql -u root -p
-		password:111
+		password:123
 
 	about the gcc:
 		1.You should install the lib of MySQL:
@@ -19,7 +19,7 @@
 			#The m.c mean your C file. And the -I will point the folder of your heads. It will make the m.o file.
 
 		3.make the objective:
-			$gcc m.o -o m.run -L /usr/lib/ -/mysqlclient
+			$gcc m.o -o m.run -L /usr/lib/ -lmysqlclient
 
 
 		4.run:
